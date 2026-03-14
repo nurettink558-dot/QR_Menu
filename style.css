@@ -1,0 +1,89 @@
+/* Custom Styles that go beyond Tailwind utilities */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Glassmorphism utilities */
+.glass-effect {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Smooth Image Loading */
+img {
+    transition: opacity 0.5s ease-in-out;
+}
+img[loading] {
+    opacity: 0;
+}
+img.loaded {
+    opacity: 1;
+}
+
+/* Category Pill Active State Customization */
+.category-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.category-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.category-btn.active::after {
+    width: 100%;
+}
+
+/* Menu Card Hover Effects */
+.menu-card {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.dark .menu-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+/* Image Container in Card */
+.menu-card-img-wrapper {
+    overflow: hidden;
+}
+
+.menu-card-img-wrapper img {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.menu-card:hover .menu-card-img-wrapper img {
+    transform: scale(1.05);
+}
+
+/* Modal Animations are handled via Tailwind classes in JS, but adjusting timing function */
+.ease-apple {
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Modal Open State Classes */
+body.modal-open {
+    overflow: hidden;
+}

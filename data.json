@@ -1,0 +1,65 @@
+{
+  "restaurantName": "Lumina Lounge",
+  "categories": [
+    { "id": "starters", "name": "Başlangıçlar", "icon": "fa-solid fa-seedling" },
+    { "id": "mains", "name": "Ana Yemekler", "icon": "fa-solid fa-utensils" },
+    { "id": "desserts", "name": "Tatlılar", "icon": "fa-solid fa-ice-cream" },
+    { "id": "drinks", "name": "İçecekler", "icon": "fa-solid fa-martini-glass" }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "categoryId": "starters",
+      "name": "Tütsülenmiş Somon Tartar",
+      "description": "Avokado püresi, kapari ve taze yuzu sosu ile servis edilir.",
+      "price": 320,
+      "image": "https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?q=80&w=600&auto=format&fit=crop",
+      "tags": ["Yeni", "Şefin Tavsiyesi"]
+    },
+    {
+      "id": 2,
+      "categoryId": "starters",
+      "name": "Trüf Mantarlı Arancini",
+      "description": "Mozzarella dolgulu risotto topları, parmesan kreması ile.",
+      "price": 280,
+      "image": "https://images.unsplash.com/photo-1560662660-3162b77a1fc5?q=80&w=600&auto=format&fit=crop",
+      "tags": ["Vejetaryen"]
+    },
+    {
+      "id": 3,
+      "categoryId": "mains",
+      "name": "Dana Bonfile",
+      "description": "Közlenmiş kuşkonmaz, patates püresi ve kırmızı şarap sosu eşliğinde 200g bonfile.",
+      "price": 850,
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop",
+      "tags": ["Popüler"]
+    },
+    {
+      "id": 4,
+      "categoryId": "mains",
+      "name": "Fırınlanmış Deniz Levreği",
+      "description": "Limonlu kinoa, ızgara sebzeler ve fesleğen yağı ile.",
+      "price": 640,
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=600&auto=format&fit=crop",
+      "tags": ["Glutensiz"]
+    },
+    {
+      "id": 5,
+      "categoryId": "desserts",
+      "name": "Orman Meyveli Pavlova",
+      "description": "Çıtır beze, vanilya çubuğu kreması ve taze orman meyveleri.",
+      "price": 250,
+      "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=600&auto=format&fit=crop",
+      "tags": []
+    },
+    {
+      "id": 6,
+      "categoryId": "drinks",
+      "name": "Artisan Hibiscus Sunset",
+      "description": "Hibiskus çayı, taze lime, agave şurubu ve soda.",
+      "price": 180,
+      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=600&auto=format&fit=crop",
+      "tags": ["İmza İçecek"]
+    }
+  ]
+}
